@@ -5,13 +5,10 @@ import moviepy
 import time
 import moviepy.editor
 
-# But du programme : renomer les video présentes dans le dossier entrer afin de les adapter au site
+# But du programme : renomer les video présentes dans le dossier sélectionner
 
 # Dossier dans lesquels effectuer la recherche
 mains_folders = [str(input("Entrez le dossier des episodes a renommer : "))]
-
-# Liste des episodes trouver
-eps_folders = []
 
 
 # Fonction redemarrage du programme
@@ -62,8 +59,6 @@ else :
         os.mkdir(str(mains_folders[0]) + '/Rename/')
         print ("directory created")
 
-print (save_dir)
-print (dirs[0])
 # Nouveau nom a appliquer
 new_name = input("comment renommer les episodes : ")
 number = int(input("Numéro episode du début : "))
